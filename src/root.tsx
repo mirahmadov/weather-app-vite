@@ -18,7 +18,7 @@ export default function Root() {
       setLoading(true);
       axios({
         method: "get",
-        url: `http://universities.hipolabs.com/search?name=${query}`,
+        url: `https://universities.hipolabs.com/search?name=${query}`,
       })
         .then((res: any) => {
           setData(res?.data);
